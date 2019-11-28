@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Bootstrap 4 Website Layout</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/style.css">
+    <link href="../css1/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>BOOTSTRAP SIDEBAR</h3>
+            </div>
+
+            <nav class="pushy pushy-left" data-focus="#first-link">
+                <div class="pushy-content">
+                    <ul>
+                        <li class="pushy-submenu">
+                            <button id="first-link">Submenu 1</button>
+                            <ul>
+                                <li class="pushy-submenu">
+                                    <button>Sub-Submenu 1</button>
+                                    <ul>
+                                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pushy-submenu">
+                                    <button>Sub-Submenu 2</button>
+                                    <ul>
+                                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pushy-link"><a href="#">Item 1</a></li>
+                                <li class="pushy-link"><a href="#">Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="pushy-submenu">
+                            <button>Submenu 2</button>
+                            <ul>
+                                <li class="pushy-link"><a href="#">Item 1</a></li>
+                                <li class="pushy-link"><a href="#">Item 2</a></li>
+                                <li class="pushy-link"><a href="#">Item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="pushy-submenu">
+                            <button>Submenu 3</button>
+                            <ul>
+                                <li class="pushy-link"><a href="#">Item 1</a></li>
+                                <li class="pushy-link"><a href="#">Item 2</a></li>
+                                <li class="pushy-link"><a href="#">Item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="pushy-submenu">
+                            <button>Submenu 4</button>
+                            <ul>
+                                <li class="pushy-link"><a href="#">Item 1</a></li>
+                                <li class="pushy-link"><a href="#">Item 2</a></li>
+                                <li class="pushy-link"><a href="#">Item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                        <li class="pushy-link"><a href="#">Item 4</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">home1</a>
+                        </li>
+                        <li>
+                            <a href="#">home2</a>
+                        </li>
+                        <li>
+                            <a href="#">home3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">page1</a>
+                        </li>
+                        <li>
+                            <a href="#">page2</a>
+                        </li>
+                        <li>
+                            <a href="#">page3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Download code</a>
+                </li>
+                <li>
+                    <a href="#" class="article">article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <button class="menu-btn">&#9776; Menu</button>
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-gradient-primary bg-light sticky-top">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-light">
+                        <i class="navbar-toggler-icon"></i>
+                    </button>
+                    <a class="navbar-brand h1 mb-0" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSite">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                    id="navDrop">Social</a>
+                                <div class="dropdown-menu">
+
+                                    <a class="dropdown-item" href="#">Facebook</a>
+                                    <a class="dropdown-item" href="#">Instagram</a>
+                                    <a class="dropdown-item" href="#">Twitter</a>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..">
+                            <button class="btn btn-dark" type="Submit">Ok</button>
+                        </form>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!--- Image Slider -->
+            <div id="slides" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/pqpvaikct.jpg" class="img-fluid d-block">
+                        <div class="carousel-caption">
+                            <h1 class="display-1">Geociências - IFPR - <i>campus</i> Assis Chateaubriand</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--- Jumbotron -->
+            <div class="container-fluid">
+                <div class="row jumbotron">
+                    <div class="col-xs-12 col-sm-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                        <p class="lead"> Este sítio eletrônico foi desenvolvido como um TCC (Trabalho de Conclusão de
+                            curso) e
+                            tem como seu objetivo o intuíto de informar a todos da região e do mundo sobre os avanços
+                            científicos na área da Geocultura advindos do Instituto Federal do Paraná <i>campus</i>
+                            Assis
+                            Chateaubriand.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#"><button type="button" class="btn btn-outline-secondary">Continuar lendo</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- Post Content Column -->
+                    <div class="col-lg-8">
+
+                        <!-- Title -->
+                        <h1 class="mt-4">Projeto de Rochas e Minerais do IFPR participa de evento Geocientifico em
+                            Marechal
+                            Cândido Rondon!</h1>
+
+                        <!-- Author -->
+                        <p class="lead">
+                            by
+                            <a href="#">Antony Henrique Bresolin</a>
+                        </p>
+
+                        <hr>
+
+                        <!-- Date/Time -->
+                        <p>Postado em 29 de setembro de 2019 às 20:00</p>
+
+                        <hr>
+
+                        <!-- Preview Image -->
+                        <img class="img-fluid rounded" src="../img/rochas marechal.jpg" alt="">
+
+                        <hr>
+
+                        <!-- Post Content -->
+                        <p class="lead">Os integrantes do <strong>projeto de Rochas e Minerais do IFPR
+                            </strong><i>campus</i>
+                            Assis Chateaubriand
+                            ministram minicurso no quarto dia de atividades da XI Expedição Geográfica - III Semana
+                            Integrada
+                            de Graduação e Pós-graduação em Geografia de Marechal Cândido Rondon!</p>
+
+                        <p>Os integrantes ministraram o minicurso: <strong>"ROCHAS, MINERAIS E A CATALOGAÇÃO
+                                DIDÁTICA"</strong>
+                            no
+                            evento. Abrindo assim, um leque de possibidades, para a divulgação cietífica em mais
+                            regiões.</p>
+
+                        <p>Este evento pôde mostrar um pouco a nós leitores de como a <strong>Geociencia
+                                didática</strong> é
+                            importante.
+                            Trazendo não somente a teoria, mas tambem algumas amostras, como podemos ver adiante.</p>
+
+                        <img class="img-fluid rounded" src="../img/rochas marechal 2.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto
+                            blanditiis
+                            unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
+                            perspiciatis. Enim, iure!</p>
+
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                erat a
+                                ante.</p>
+                            <footer class="blockquote-footer">Someone famous in
+                                <cite title="Source Title">Source Title</cite>
+                            </footer>
+                        </blockquote>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut
+                            quas
+                            placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo
+                            voluptatem
+                            obcaecati?</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut,
+                            explicabo,
+                            aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat
+                            numquam
+                            recusandae? Qui, necessitatibus, est!</p>
+
+                        <hr>
+
+                    </div>
+
+                    <!-- Sidebar Widgets Column -->
+                    <div class="col-md-4">
+
+                        <!-- Search Widget -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Pesquisar</h5>
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories Widget -->
+
+
+                        <!-- Side Widget -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Entre em contato</h5>
+                            <div class="card-body">
+                                Você sabia que pode entrar em contato conosco?
+                                <p>Mande agora um email para:</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+
+            <!--- Connect -->
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-12">
+                        <h2>Connect</h2>
+                    </div>
+                    <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--- Footer -->
+            <footer>
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <img src="../img/w3newbie.png">
+                            <hr class="light">
+                            <p>555-555-5555</p>
+                            <p>email@gmail.com</p>
+                            <p>100 street name</p>
+                            <p>City, State, 00000</p>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Our hours</h5>
+                            <hr class="light">
+                            <p>Monda: 9am</p>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Service Area</h5>
+                            <hr class="light">
+                            <p>City, State, 00000</p>
+                            <p>City, State, 00000</p>
+                            <p>City, State, 00000</p>
+                            <p>City, State, 00000</p>
+                        </div>
+                        <div class="col-12">
+                            <hr class="light">
+                            <h5>&copy; w3newbie.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="../node_modules/jquery/dist/jquery.js"></script>
+            <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+            <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+            <script>
+
+                $(function () {
+
+                    $('[data-toggle="popover"]').popover()
+
+                })
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                    });
+                });  
+            </script>
+
+</body>
+
+</html>
+
+
+<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
+
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
